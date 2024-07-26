@@ -1,0 +1,28 @@
+{% extends 'Task/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                <article class="media content-section">
+                    <div class="media-body">
+                        <div class="article-metadata">
+                            <small class="text-muted">{{ object.created_at|date:"l g:i A, d F, Y" }}</small><br>
+                            <h5 class="mr-2">{{ object.title }}</h5>
+                            <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'task-update' task.id %}">update</a>
+                            <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'task-delete' task.id %}">Delete</a>
+                        </div>
+                        <h2 class="article-title">{{ object.title }}</h2>
+                        <p class="article-content">{{ object.description }}</p>
+                        <small class="text-muted"><strong>Due Date:</strong> {{ object.due_date|date:"l g:i A, d F, Y"  }}</small>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="task{{ task.id }}" {% if task.completed %}checked{% endif %}>
+                            <label class="form-check-label" for="task{{ task.id }}">
+                                Completed
+                            </label>
+                        </div> <!-- /.form-check -->
+                    </div> <!--media-body-->
+                </article>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
