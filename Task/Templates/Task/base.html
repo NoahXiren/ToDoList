@@ -17,11 +17,7 @@
     {% endif %}
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">ToDo List</h1>
-        <div class="mb-4 text-center">
-            <a href="{% url 'task-create' %}" class="btn btn-primary">Add Task</a>
-        </div>
+
         <div class="row">
             {% block content %}{% endblock content %}
         </div>

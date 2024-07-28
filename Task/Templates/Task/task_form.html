@@ -4,7 +4,7 @@
         <form method="POST" class="w-100" style="max-width: 600px;">
             {% csrf_token %}
             <fieldset class="form-group text-center">
-                <legend class="border-bottom mb-4 text-center">Add New Task</legend>
+                <legend class="border-bottom mb-4 text-center">Task</legend>
                 <div class="form-group mb-3">
                     {{ form.title.label_tag }}<br>
                     {{ form.title }}
