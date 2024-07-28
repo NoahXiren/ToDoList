@@ -21,14 +21,6 @@ This is a simple ToDo application built with Django and Bootstrap. It allows use
 </div>
 <br>
 
-## Features
-
-- Add new tasks
-- Edit existing tasks
-- Delete tasks
-- Mark tasks as complete or incomplete
-  
-
 ## Prerequisites
 
 Make sure you have the following installed:
@@ -71,9 +63,26 @@ http://127.0.0.1:8000
 
 ## Usage
 
-- Add new tasks using the form provided.
-- Edit or delete tasks as needed.
-- Mark tasks as complete or incomplete.
+
+### Adding a Task:
+
+- click the add task button
+
+### Editing a Task:
+
+- Click the "update" button on a task.
+- Modify the task details.
+- Click the "submit" button to save changes.
+
+### Completing a Task:
+
+- Click the "Check" button on a task to toggle its completion status.
+
+### Deleting a Task:
+
+- Click the "delete" button on a task to delete it.
+
+
 
 ## Folder Structure
 ```bash
