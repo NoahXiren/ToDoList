@@ -15,9 +15,9 @@ This is a simple ToDo application built with Django and Bootstrap. It allows use
 
 ## screenshots
 <div align="center">
-  <img src="data/screenshot.png" alt="screenshot_1">
+  <img src="data/screenshot.png" alt="screenshot">
   <h3><em><u>How the todo list works?</u></em></h3>
-  <img src="data/1.gif" alt= "gif_1">
+  <img src="data/1.gif" alt= "1">
 </div>
 <br>
 
